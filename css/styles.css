@@ -498,7 +498,7 @@ letter-spacing: 0.02em;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: 0.02;
+letter-spacing: 0.02em;
 margin-bottom: 16px;
 
 }
@@ -579,9 +579,7 @@ letter-spacing: 0.04em;
 }
 
 .model{
-    padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 72px 24px 24px 24px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -589,8 +587,11 @@ letter-spacing: 0.04em;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
+    min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;  
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-close-btm{
     cursor: pointer;
@@ -611,8 +612,8 @@ letter-spacing: 0.04em;
 }
 .model-close-btm:hover,
 .model-close-btm:focus{
- background-color: #4D5AE5;
- border-radius: #4D5AE5;
+ background-color: #404bbf;
+ border: nome;
 }
 
 .model-close-icon{
@@ -620,7 +621,7 @@ letter-spacing: 0.04em;
 }
 .model-close-icon:hover,
 .model-close-icon:focus{
-    fill: #E7E9FC;
+    fill: #FFFFFF;
 }
 
 .backdrop-logo{
@@ -657,7 +658,7 @@ letter-spacing: 0.04em;
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 100%;
     padding-left: 38px;
-    
+    background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -675,9 +676,13 @@ letter-spacing: 0.04em;
 .input-text-write:focus + .input-icon{
     fill: #4D5AE5;
 }
+.form-input-comment{
+    margin-bottom: 16px;
+}
 .text-input-commit{
     margin-top: 4px;
     width: 100%; 
+    height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
@@ -689,20 +694,26 @@ letter-spacing: 0.04em;
     letter-spacing: 0.04em;
     outline: transparent;
     resize: none;
+    background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-input-commit:focus{
     border-color:#4d5ae5
 }
 .accept-input{
-    margin-top: 16px;
     margin-bottom: 24px;
+    
 }
 .accept-checkbox{
     position: absolute;
 }
 .clone-accept-checkbox{
     cursor: pointer;
+    color:#8E8F99;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.04em;
     
 
 
@@ -719,18 +730,12 @@ letter-spacing: 0.04em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accept-checkbox:checked + .clone-accept-checkbox > .clone-checkbox-icon{
-    background-color: #4d5ae5;
-    border: #4d5ae5;
+    background-color: #404bbf;
+    border: none;
     fill: #f4f4fd 
 
 }
-.i-accept{
-    color:#8E8F99;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.16;
-letter-spacing: 0.04em;
-}
+
 .privacy-policy{
     color: #4D5AE5;
 font-size: 12px;
@@ -751,7 +756,7 @@ text-decoration-line: underline;
     background-color: #4d5ae5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
     cursor: pointer;
