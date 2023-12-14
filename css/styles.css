@@ -620,14 +620,11 @@ letter-spacing: 0.04em;
 .model-close-btm:focus{
  background-color: #404bbf;
  border: none;
+ fill: #ffffff;
 }
 
 .model-close-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.model-close-icon:hover,
-.model-close-icon:focus{
-    fill: #ffffff;
 }
 
 .backdrop-logo{
