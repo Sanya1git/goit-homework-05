@@ -514,7 +514,12 @@ margin-bottom: 16px;
     background-color: transparent;
 }
 .footer-email-input{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.04em;
     border-radius: 4px;
+    color: #FFFFFF;
 border: 1px solid  #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 100%;
@@ -524,7 +529,7 @@ background-color: transparent;
     
 }
 .footer-email-input::placeholder{
-    color: #FFF;
+    color: #FFFFFF;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -554,10 +559,11 @@ letter-spacing: 0.04em;
 .subscribe-butt:hover,
 .subscribe-butt:focus{
     background-color: #404BBF;
+    border: none;
 
 }
 .subscribe-butt-icon{
-    fill: #fff;
+    fill: #FFFFFF;
     margin-left: 16px;
 }
 /* ===================backdrop====================*/
@@ -732,7 +738,7 @@ letter-spacing: 0.04em;
 .accept-checkbox:checked + .clone-accept-checkbox > .clone-checkbox-icon{
     background-color: #404bbf;
     border: none;
-    fill: #f4f4fd 
+    fill: #f4f4fd; 
 
 }
 
