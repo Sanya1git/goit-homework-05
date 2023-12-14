@@ -537,7 +537,7 @@ line-height: 2;
 letter-spacing: 0.04em;
 } 
 .subscribe-butt{
-    ont-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     border-radius: 4px;
     background-color: #4d5ae5;
     color: #fff;
@@ -775,4 +775,5 @@ text-decoration-line: underline;
 .backdrop-but:hover,
 .backdrop-but:focus{
     background-color: #404BBF;
+    border: none; 
 }
