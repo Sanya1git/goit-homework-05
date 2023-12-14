@@ -619,7 +619,7 @@ letter-spacing: 0.04em;
 .model-close-btm:hover,
 .model-close-btm:focus{
  background-color: #404bbf;
- border: nome;
+ border: none;
 }
 
 .model-close-icon{
@@ -627,7 +627,7 @@ letter-spacing: 0.04em;
 }
 .model-close-icon:hover,
 .model-close-icon:focus{
-    fill: #FFFFFF;
+    fill: #ffffff;
 }
 
 .backdrop-logo{
